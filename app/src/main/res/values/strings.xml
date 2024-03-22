@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PakidaX</string>
+    <string name="welcome_message">Welcome to PakidaX</string>
+    <string name="play">Play</string>
+    <string name="players">Players</string>
+    <string name="mingu">Mingu</string>
+    <string name="chungu">Chungu</string>
+    <string name="think">Think.?</string>
+</resources>
