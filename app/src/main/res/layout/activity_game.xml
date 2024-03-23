@@ -8,6 +8,17 @@
     android:background="@color/gm_bg"
     tools:context=".Game">
 
+    <TextView
+        android:id="@+id/gamer_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:gravity="center"
+        android:text="@string/think"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="0dp"

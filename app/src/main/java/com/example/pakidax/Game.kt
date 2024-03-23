@@ -1,6 +1,8 @@
 package com.example.pakidax
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,9 @@ class Game : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val gamerTextView = findViewById<TextView>(R.id.gamer_text)
+//        Log.i("game", intent.extras!!.getString("first_player"))
+        gamerTextView.setText(intent.extras!!.getString("first_player").toString())
+
     }
 }

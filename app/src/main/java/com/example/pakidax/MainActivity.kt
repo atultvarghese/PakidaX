@@ -3,6 +3,8 @@ package com.example.pakidax
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,9 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         var playButton = findViewById<Button>(R.id.main_play)
         playButton.setOnClickListener(){
-            var playIntent = Intent(this, Game::class.java)
-//            playIntent.putExtra("first_player", findViewById<Button>(R.id.main_player_one).text.toString())
-//            playIntent.putExtra("second_player", findViewById<Button>(R.id.main_player_two).text.toString())
+            val playIntent = Intent(this, Game::class.java)
+            playIntent.putExtra("first_player", findViewById<EditText>(R.id.main_player_one).text.toString())
+            playIntent.putExtra("second_player", findViewById<EditText>(R.id.main_player_two).text.toString())
             startActivity(playIntent)
         }
     }
